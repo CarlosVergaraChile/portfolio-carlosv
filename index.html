@@ -4,213 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Carlos Alberto Vergara del Rio - Senior Executive | Corporate Transformation | P&L Management | +30 years">
-    <meta name="keywords" content="Senior Executive, Corporate Transformation, P&L Management, Capital Assurance, Chile">
-    <meta property="og:title" content="Carlos Alberto Vergara del Rio - Senior Executive">
-    <meta property="og:description" content="30+ years Corporate Transformation, P&L Management, Capital Assurance">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Carlos Alberto Vergara del Rio - Senior Executive</title>
+    <title>Carlos Alberto Vergara - Senior Executive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --primary: #1a365d; --secondary: #2c3e50; --accent: #3498db; --light: #ecf0f1; }
-        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #2c3e50; background: #f9f9f9; -webkit-font-smoothing: antialiased; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        nav { background: white; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
-        .logo { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: #1a365d; }
-        .nav-menu { display: flex; list-style: none; gap: 2.5rem; }
-        .nav-menu a { text-decoration: none; color: #4a5568; font-weight: 500; transition: color 0.3s; border-bottom: 2px solid transparent; padding-bottom: 5px; }
-        .nav-menu a:hover { color: #1a365d; border-bottom-color: #1a365d; }
-        .cta-button { background: #1a365d; color: white !important; padding: 0.6rem 1.5rem; border-radius: 4px; transition: background 0.3s; }
-        .cta-button:hover { background: #2c3e50; }
-        .hero { padding: 8rem 0 4rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin-top: 60px; }
-        .hero-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
-        .hero-title { font-family: 'Montserrat', sans-serif; font-size: 2.8rem; font-weight: 700; margin-bottom: 1rem; color: #1a365d; line-height: 1.2; }
-        .hero-subtitle { font-size: 1.2rem; color: #4a5568; margin-bottom: 1.5rem; font-weight: 400; }
-        .hero-description { color: #718096; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.7; }
-        .hero-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-        .highlight-item { text-align: center; }
-        .highlight-number { display: block; font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 800; color: #1a365d; }
-        .highlight-text { color: #718096; font-size: 0.85rem; font-weight: 500; text-transform: uppercase; margin-top: 0.5rem; }
-        .profile-img { max-width: 300px; width: 100%; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin: 0 auto; display: block; }
-        section { padding: 5rem 0; }
-        .section-dark { background: #1a365d; color: white; }
-        .section-title { font-family: 'Montserrat', sans-serif; text-align: center; margin-bottom: 3rem; font-size: 2.5rem; font-weight: 700; color: inherit; position: relative; padding-bottom: 1rem; }
-        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: #1a365d; }
-        .section-dark .section-title::after { background: #e2e8f0; }
-        .grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .card { padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; border-left: 4px solid #1a365d; }
-        .section-dark .card { background: rgba(255,255,255,0.1); border-left-color: #e2e8f0; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-        .card-title { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; color: inherit; }
-        .card-subtitle { font-weight: 500; color: #3498db; margin-bottom: 0.5rem; }
-        .card-text { line-height: 1.7; color: inherit; }
-        .card-list { list-style: none; padding-left: 1.5rem; }
-        .card-list li { position: relative; padding-bottom: 0.5rem; }
-        .card-list li::before { content: '✓'; position: absolute; left: -1.5rem; color: #1a365d; font-weight: bold; }
-        .section-dark .card-list li::before { color: #e2e8f0; }
-        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
-        .contact-form { background: #f8f9fa; padding: 2rem; border-radius: 8px; }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
-        .form-group input, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid #e0e0e0; border-radius: 4px; font-family: 'Roboto', sans-serif; transition: border-color 0.3s; }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #1a365d; }
-        .submit-button { background: #1a365d; color: white; border: none; padding: 1rem 2rem; border-radius: 4px; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.3s; }
-        .submit-button:hover { background: #2c3e50; }
-        .footer { background: #2d3748; color: white; padding: 2rem 0; text-align: center; }
-        @media (min-width: 768px) { .hero-grid { grid-template-columns: 1fr 1fr; } .grid { grid-template-columns: repeat(2, 1fr); } .contact-grid { grid-template-columns: 1fr 1fr; } .hero-title { font-size: 3rem; } }
-        @media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 1023px) { .nav-menu { gap: 1rem; font-size: 0.9rem; } }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #666; background: #fafafa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; background: white; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .logo { display: flex; align-items: center; gap: 5px; font-size: 24px; font-weight: bold; color: #2E5B8C; }
+        .logo-blue { color: #4A9FD8; font-weight: bold; }
+        nav { display: flex; gap: 30px; }
+        nav a { text-decoration: none; color: #666; font-size: 14px; font-weight: 400; transition: color 0.3s; }
+        nav a:hover { color: #2E5B8C; }
+        .hero { background: linear-gradient(135deg, #4A7BA7 0%, #2E5B8C 100%); padding: 80px 0; text-align: center; color: white; }
+        .hero h1 { font-size: 56px; font-weight: bold; margin: 30px 0; line-height: 1.2; }
+        .hero p { font-size: 18px; margin: 20px 0; opacity: 0.95; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero-tags { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+        .tag { padding: 10px 25px; border: 2px solid rgba(255,255,255,0.5); border-radius: 25px; color: white; font-size: 14px; font-weight: 500; }
+        section { padding: 80px 0; background: white; }
+        section:nth-child(even) { background: #f9f9f9; }
+        h2 { font-size: 40px; color: #2E5B8C; margin-bottom: 50px; font-weight: bold; text-align: center; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        .card { padding: 30px; background: white; border-left: 4px solid #4A9FD8; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #2E5B8C; font-size: 20px; margin-bottom: 15px; font-weight: bold; }
+        .card .subtitle { color: #4A9FD8; font-size: 13px; font-weight: 500; margin-bottom: 10px; }
+        .card p { color: #666; font-size: 14px; line-height: 1.8; }
+        .card ul { list-style: none; padding-left: 0; margin-top: 15px; }
+        .card li { color: #666; font-size: 14px; padding: 8px 0; padding-left: 20px; position: relative; }
+        .card li:before { content: '✓'; position: absolute; left: 0; color: #4A9FD8; font-weight: bold; }
+        footer { background: #2E5B8C; color: white; text-align: center; padding: 40px 0; font-size: 14px; }
+        @media (max-width: 768px) { nav { gap: 15px; } .hero h1 { font-size: 36px; } nav a { font-size: 12px; } }
     </style>
 </head>
 <body>
-<nav>
-  <div class="container nav-container">
-    <a class="logo">CV</a>
-    <ul class="nav-menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre Mi</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#contacto" class="cta-button">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
-<section id="inicio" class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1 class="hero-title">CARLOS ALBERTO VERGARA DEL RIO</h1>
-      <p class="hero-subtitle">Senior Executive | Corporate Transformation | P&L Management</p>
-      <p class="hero-description">30+ years driving transformative organizational change. Expert in capital assurance, revenue cycle optimization, and converting complex operational challenges into concrete financial results across public and private sectors.</p>
-      <div class="hero-highlights">
-        <div class="highlight-item">
-          <span class="highlight-number">30+</span>
-          <span class="highlight-text">Anos Experiencia</span>
+<header class="container">
+    <div class="logo"><span style="color: #2E5B8C;">CV</span><span class="logo-blue">Vergara</span></div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+<section class="hero" id="inicio">
+    <div class="container">
+        <h1>CARLOS ALBERTO VERGARA DEL RIO</h1>
+        <p>Senior Executive | Corporate Transformation | P&L Management</p>
+        <p style="font-size: 16px; opacity: 0.9;">30+ anos de experiencia liderando transformacion organizacional, aseguramiento de capital y optimizacion de ciclos de ingresos en sectores publicos y privados.</p>
+        <div class="hero-tags">
+            <div class="tag">$15M USD Capital Financiado</div>
+            <div class="tag">$100M USD Fraude Eliminado</div>
+            <div class="tag">$5M USD Reduccion Inventario</div>
         </div>
-        <div class="highlight-item">
-          <span class="highlight-number">$100M</span>
-          <span class="highlight-text">Fraud Eliminated</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-number">$15M</span>
-          <span class="highlight-text">USD Capital Secured</span>
-        </div>
-      </div>
     </div>
-    <div>
-      <img src="https://via.placeholder.com/300x400" alt="Carlos Vergara" class="profile-img">
-    </div>
-  </div>
 </section>
 
-<section id="sobre-mi" class="section-dark">
-  <div class="container">
-    <h2 class="section-title">EXECUTIVE PROFILE</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 class="card-title">Capital Leadership</h3>
-        <p class="card-text">Orchestrated strategy to secure ~$15M USD (CLP 12.1B) in financing for hospital infrastructure and recovered over ~$14M USD in tax expenses via Big Data auditing.</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Revenue Cycle Management</h3>
-        <p class="card-text">Expert in optimizing post-sales, collections, and inventory processes to reduce bad debt and secure working capital, achieving a $5M USD inventory reduction (automotive sector).</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Transformation & Compliance</h3>
-        <p class="card-text">Led national-level modernization initiatives, eliminating $100M USD in annual fraud through biometric control systems (SENCE).</p>
-      </div>
+<section id="sobre-mi">
+    <div class="container">
+        <h2>Perfil Profesional</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Liderazgo de Capital</h3>
+                <p>Orqueste la estrategia para asegurar ~$15M USD (CLP 12.1B) en financiamiento para infraestructura hospitalaria y recupero mas de ~$14M USD en gastos fiscales via auditorias Big Data.</p>
+            </div>
+            <div class="card">
+                <h3>Gestion de Ciclo de Ingresos</h3>
+                <p>Experto en optimizar procesos post-venta, cobranzas e inventario para reducir deuda morosa y asegurar capital de trabajo, logrando reduccion de $5M USD en inventario (sector automotriz).</p>
+            </div>
+            <div class="card">
+                <h3>Transformacion & Cumplimiento</h3>
+                <p>Lideo iniciativas de modernizacion a nivel nacional, eliminando $100M USD en fraude anual a traves de sistemas de control biometrico (SENCE).</p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <section id="experiencia">
-  <div class="container">
-    <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 class="card-title">Commercial Lead & Strategic Planning Consultant</h3>
-        <p class="card-subtitle">UNIVERSIDAD ANDRES BELLO / CONSTRUCTORA MAURICIO LEVY JOFRE</p>
-        <p class="card-text" style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #718096;">Apr 2024 - Present | Santiago, Chile</p>
-        <ul class="card-list">
-          <li>Commercial Execution: Spearheaded Asset Sale & Divestiture strategy for construction firm</li>
-          <li>Strategic Planning: Led 2024-2029 Strategic Plan formulation for Institute of Neurosurgery</li>
-          <li>Graduate Professor: Lecturer in Operations Management, rated top 90% by health professionals</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Management Consultant</h3>
-        <p class="card-subtitle">GRUPO INPPAMET / CODELCO CHUQUICAMATA</p>
-        <p class="card-text" style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #718096;">2018 - 2024 | Calama, Chile</p>
-        <ul class="card-list">
-          <li>Process Optimization: Redesigned working capital and procurement cycles</li>
-          <li>Financial Impact: Generated ~$3M USD in annual savings through operational improvements</li>
-          <li>Capital Assurance: Implemented risk and compliance frameworks</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Senior Management Consultant</h3>
-        <p class="card-subtitle">HOSPITAL DE LOS ANGELES / SOLUZIONA</p>
-        <p class="card-text" style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #718096;">2010 - 2018 | Santiago, Chile</p>
-        <ul class="card-list">
-          <li>Healthcare Transformation: Led hospital modernization and efficiency programs</li>
-          <li>Financial Recovery: Secured $15M USD in healthcare financing</li>
-          <li>Operations: Optimized hospital supply chains and resource allocation</li>
-        </ul>
-      </div>
+    <div class="container">
+        <h2>Trayectoria Profesional</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Consultor de Liderazgo Comercial y Planificacion Estrategica</h3>
+                <p class="subtitle">UNIVERSIDAD ANDRES BELLO / CONSTRUCTORA MAURICIO LEVY JOFRE</p>
+                <p style="color: #999; font-size: 13px; margin-bottom: 15px;">Apr 2024 - Presente | Santiago, Chile</p>
+                <ul>
+                    <li>Impulso Ejecucion Comercial: Lidero estrategia de Venta de Activos para constructora multinacional</li>
+                    <li>Planificacion Estrategica: Formule Plan Estrategico 2024-2029 para Instituto de Neurocirugia</li>
+                    <li>Profesor Adjunto: Docente en Gestion de Operaciones, clasificado en top 90% por profesionales de salud</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Consultor de Gestion</h3>
+                <p class="subtitle">GRUPO INPPAMET / CODELCO CHUQUICAMATA</p>
+                <p style="color: #999; font-size: 13px; margin-bottom: 15px;">2018 - 2024 | Calama, Chile</p>
+                <ul>
+                    <li>Optimizacion de Procesos: Redisene ciclos de capital de trabajo y procurement</li>
+                    <li>Impacto Financiero: Genere ~$3M USD en ahorros anuales via mejoras operacionales</li>
+                    <li>Aseguramiento de Capital: Implemente marcos de riesgo y cumplimiento normativo</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Consultor Senior de Gestion</h3>
+                <p class="subtitle">HOSPITAL DE LOS ANGELES / SOLUZIONA</p>
+                <p style="color: #999; font-size: 13px; margin-bottom: 15px;">2010 - 2018 | Santiago, Chile</p>
+                <ul>
+                    <li>Transformacion en Salud: Lideo modernizacion y programas de eficiencia hospitalaria</li>
+                    <li>Recuperacion Financiera: Asegure $15M USD en financiamiento para infraestructura de salud</li>
+                    <li>Operaciones: Optimice cadenas de suministro y asignacion de recursos hospitalarios</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
-<section id="contacto">
-  <div class="container contact-grid">
-    <div>
-      <h2 class="section-title" style="text-align: left; font-size: 2rem;">Get in Touch</h2>
-      <p style="font-size: 1.2rem; font-weight: 600; color: #3498db; margin-bottom: 1rem; margin-top: -2rem;">Lets discuss your organizational transformation challenges.</p>
-      <p style="color: #cbd5e0; margin-bottom: 1.5rem;">Based in Santiago, Chile. Open to consulting engagements across LATAM.</p>
-      <div style="margin-top: 2rem;">
-        <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> carlosvergarachile@gmail.com</p>
-        <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> +56 9 7609 3848</p>
-        <p><strong>Location:</strong> Las Condes, Santiago, Chile</p>
-      </div>
+<section id="contacto" style="background: white;">
+    <div class="container">
+        <h2>Contacto</h2>
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <p style="font-size: 18px; color: #2E5B8C; margin: 20px 0; font-weight: 500;">Discutamos sus desafios de transformacion organizacional</p>
+            <p style="color: #666; margin: 20px 0;">Basado en Santiago, Chile. Disponible para compromisos de consultoria en LATAM.</p>
+            <div style="margin-top: 40px;">
+                <p style="margin: 15px 0;"><strong>Email:</strong> carlosvergarachile@gmail.com</p>
+                <p style="margin: 15px 0;"><strong>Telefono:</strong> +56 9 7609 3848</p>
+                <p style="margin: 15px 0;"><strong>Ubicacion:</strong> Las Condes, Santiago, Chile</p>
+            </div>
+        </div>
     </div>
-    <div class="contact-form">
-      <h3 style="margin-bottom: 1.5rem; color: #1a365d;">Send a Message</h3>
-      <form id="contactForm" onsubmit="handleForm(event)">
-        <div class="form-group">
-          <label for="name">Full Name *</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="company">Company / Organization</label>
-          <input type="text" id="company" name="company">
-        </div>
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="submit-button">Send Message</button>
-      </form>
-    </div>
-  </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2024 Carlos Alberto Vergara del Rio. All rights reserved.</p>
-    <p style="font-size: 0.9rem; color: #cbd5e0; margin-top: 0.5rem;">Senior Executive | Corporate Transformation | P&L Management</p>
-  </div>
+<footer>
+    <p>&copy; 2024 Carlos Alberto Vergara del Rio. Todos los derechos reservados.</p>
 </footer>
-
-<script>
-function handleForm(e) {
-  e.preventDefault();
-  alert('Thank you for your message. I will be in touch soon.');
-  document.getElementById('contactForm').reset();
-}
-</script>
 </body>
 </html>
