@@ -3,203 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Vergara - Estrategia & Gestion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Carlos Vergara - Socio Estrategico Integral - 30+ Anos Experiencia</title>
+    <meta name="description" content="Director de Estrategia con 30+ anos liderando transformacion organizacional en Chile y LATAM.">
+    <meta property="og:title" content="Carlos Vergara - Socio Estrategico Integral">
+    <meta property="og:description" content="30+ anos de experiencia en transformacion organizacional y excelencia operacional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1a365d; --secondary: #2c3e50; --accent: #3498db;
+            --text-dark: #2c3e50; --text-light: #ffffff; --bg-light: #f8f9fa;
+        }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); -webkit-font-smoothing: antialiased; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        nav { background: white; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+        .logo { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-menu a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+        .nav-menu a:hover { color: var(--primary); }
+        .cta-button { background: var(--primary); color: white; padding: 0.6rem 1.5rem; border-radius: 4px; transition: background 0.3s; }
+        .cta-button:hover { background: var(--secondary); }
+        .hero { padding: 8rem 0 4rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin-top: 60px; }
+        .hero-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+        .hero-title { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--primary); }
+        .hero-subtitle { font-size: 1.25rem; color: var(--text-dark); margin-bottom: 1.5rem; }
+        .hero-description { color: #718096; margin-bottom: 2rem; font-size: 1.1rem; }
+        .profile-img { width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin: 0 auto; }
+        section { padding: 5rem 0; }
+        .section-dark { background: var(--primary); color: white; }
+        .section-title { text-align: center; margin-bottom: 3rem; font-size: 2rem; color: inherit; }
+        .about-grid, .services-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .about-card, .service-card { padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 8px; transition: transform 0.3s; }
+        .about-card:hover, .service-card:hover { transform: translateY(-5px); }
+        .about-card-title, .service-card-title { margin-bottom: 1.5rem; font-size: 1.2rem; color: #e2e8f0; }
+        .timeline { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .timeline-item { padding: 2rem; background: #f9f9f9; border-left: 4px solid var(--primary); border-radius: 8px; }
+        .timeline-title { font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .timeline-period { color: #718096; font-size: 0.9rem; margin-bottom: 1rem; }
+        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+        .contact-form { background: var(--bg-light); padding: 2rem; border-radius: 8px; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid #e0e0e0; border-radius: 4px; font-family: 'Roboto', sans-serif; }
+        .submit-button { background: var(--primary); color: white; border: none; padding: 1rem 2rem; border-radius: 4px; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.3s; }
+        .submit-button:hover { background: var(--secondary); }
+        .footer { background: #2d3748; color: white; padding: 2rem 0; text-align: center; }
+        @media (min-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr 1fr; }
+            .about-grid, .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+            .hero-title { font-size: 3rem; }
+        }
+        @media (min-width: 1024px) {
+            .about-grid, .services-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 1023px) {
+            .menu-toggle { display: block; }
+            .nav-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-menu.active { display: flex; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo-group">
-                <div class="logo">CV</div>
-                <div class="logo-text">
-                    <div class="logo-main">Carlos Vergara</div>
-                    <div class="logo-sub">ESTRATEGIA & GESTION</div>
-                </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Sobre Mi</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section con Imagen -->
-    <section id="inicio" class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) center/cover, url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a5f8f" width="1200" height="600"/></svg>")">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Su Socio Estrategico Integral</h1>
-                <p class="tagline">30+ anos de experiencia en transformacion organizacional, excelencia operacional y gestion del cambio en Chile y LATAM.</p>
-                <p class="description">Soluciones integrales desde el diagnostico preciso hasta la implementacion adaptativa, garantizando resultados que protegen y rentabilizan su patrimonio.</p>
-                <div class="hero-badges">
-                    <span class="badge">Liderazgo multidisciplinario</span>
-                    <span class="badge">Enfoque integral</span>
-                    <span class="badge">Ejecucion con ingeniera</span>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/300x400/2c3e50/ffffff?text=Carlos+Vergara" alt="Carlos Vergara" class="profile-img">
-            </div>
-        </div>
-    </section>
+<!-- Navegacion -->
+<nav>
+  <div class="container nav-container">
+    <a href="#" class="logo">CarlosVergara</a>
+    <button class="menu-toggle" id="menuBtn">Menu</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre Mi</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto" class="cta-button">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- About Section - Sobre Mi -->
-    <section id="acerca" class="about">
-        <div class="container">
-            <h2>Sobre Mi</h2>
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>Autoridad Intelectual</h3>
-                    <p>Director de Estrategia y Optimizacion con 30+ anos liderando programas de transformacion end-to-end. Experto en anticipation estrategica y ejecucion disciplinada.</p>
-                </div>
-                <div class="about-item">
-                    <h3>Experiencia Profunda</h3>
-                    <p>Entiendo Chile profundo y los dinamicas del mercado LATAM. Metodologias propias que integran vision historica en cada decision estrategica.</p>
-                </div>
-                <div class="about-item">
-                    <h3>Resultados Comprobados</h3>
-                    <p>Correos de Chile: reduccion lead time >10 a <3 dias, productividad 3x, capacidad +221%. Premio World Mail Award 2005.</p>
-                </div>
-            </div>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-number">30+</div>
-                    <div class="stat-label">Anos Experiencia</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Proyectos Exitosos</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Anos Docente</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Compromiso</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1 class="hero-title">Su Socio Estrategico Integral</h1>
+      <p class="hero-subtitle">30+ anos de experiencia en transformacion organizacional, excelencia operacional y gestion del cambio en Chile y LATAM.</p>
+      <p class="hero-description">Soluciones integrales desde el diagnostico preciso hasta la implementacion adaptativa, garantizando resultados que protegen y rentabilizan su patrimonio.</p>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/400x500" alt="Carlos Vergara" class="profile-img">
+    </div>
+  </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experiencia" class="experience">
-        <div class="container">
-            <h2>Trayectoria Profesional</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Consultor Independiente</h3>
-                        <p class="company">Ingenieria de Gestion SpA</p>
-                        <p class="period">2006 - Presente | 19 anos</p>
-                        <ul>
-                            <li>Servicios de consultoria estrategica en diversos sectores</li>
-                            <li>Liderazgo de programas de transformacion integral</li>
-                            <li>Optimizacion de procesos y excelencia operacional</li>
-                            <li>Clients: Salud, Educacion, Manufactura, Gobierno</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Consultor Senior de Gestion</h3>
-                        <p class="company">Soluziona - Correos de Chile</p>
-                        <p class="period">2000 - 2006 | 6 anos</p>
-                        <ul>
-                            <li>Reduccion de lead time: >10 a <3 dias</li>
-                            <li>Aumento de productividad: 3x</li>
-                            <li>Incremento de capacidad: +221% (14k → 45k envios/dia)</li>
-                            <li>Premio World Mail Award 2005</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Profesor y Consultor</h3>
-                        <p class="company">Universidad de Chile</p>
-                        <p class="period">1990 - 2020 | 30 anos</p>
-                        <ul>
-                            <li>Profesor de Evaluacion de Proyectos y Gestion</li>
-                            <li>Coordinador de Consultoria Industrial</li>
-                            <li>Mentor de jovenes profesionales</li>
-                            <li>Investigador en Ingenieria Administrativa</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Sobre Mi -->
+<section id="sobre-mi" class="section-dark">
+  <div class="container">
+    <h2 class="section-title">Sobre Mi</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3 class="about-card-title">Autoridad Intelectual</h3>
+        <p>Director de Estrategia y Optimizacion con 30+ anos liderando programas de transformacion end-to-end. Experto en anticipacion estrategica y ejecucion disciplinada.</p>
+      </div>
+      <div class="about-card">
+        <h3 class="about-card-title">Experiencia Profunda</h3>
+        <p>Entiendo Chile profundo y las dinamicas del mercado LATAM. Metodologias propias que integran vision historica en cada decision estrategica.</p>
+      </div>
+      <div class="about-card">
+        <h3 class="about-card-title">Resultados Comprobados</h3>
+        <p>Correos de Chile: reduccion lead time >10 a <3 dias, productividad 3x, capacidad +221%. Premio World Mail Award 2005.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Services Section -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Ecosistema de Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Diagnostico & Transformacion Anticipativa</h3>
-                    <ul>
-                        <li>Analisis de escenarios futuros</li>
-                        <li>Evaluacion de brechas estrategicas</li>
-                        <li>Diseno de transformacion digital</li>
-                        <li>Mapeo de vulnerabilidades</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Planificacion Estrategica</h3>
-                    <ul>
-                        <li>Definicion de vision y mision</li>
-                        <li>Analisis competitivo</li>
-                        <li>Roadmaps de implementacion</li>
-                        <li>Gobernanza corporativa</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Excelencia Operacional</h3>
-                    <ul>
-                        <li>Lean/Kaizen/OPEX</li>
-                        <li>Rediseno de procesos</li>
-                        <li>Supply chain optimization</li>
-                        <li>Seguimiento de resultados</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Experiencia -->
+<section id="experiencia">
+  <div class="container">
+    <h2 class="section-title">Trayectoria Profesional</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-period">2006 - Presente  19 anos</div>
+        <h3 class="timeline-title">Consultor Independiente</h3>
+        <p class="timeline-period">Ingenieria de Gestion SpA</p>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>✓ Servicios de consultoria estrategica en diversos sectores</li>
+          <li>✓ Liderazgo de programas de transformacion integral</li>
+          <li>✓ Optimizacion de procesos y excelencia operacional</li>
+          <li>✓ Clientes: Salud, Educacion, Manufactura, Gobierno</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">2000 - 2006  6 anos</div>
+        <h3 class="timeline-title">Consultor Senior de Gestion</h3>
+        <p class="timeline-period">Soluziona - Correos de Chile</p>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>✓ Reduccion de lead time: >10 a <3 dias</li>
+          <li>✓ Aumento de productividad: 3x</li>
+          <li>✓ Incremento de capacidad: +221% (14k - 45k envios/dia)</li>
+          <li>✓ Premio World Mail Award 2005</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">1990 - 2020  30 anos</div>
+        <h3 class="timeline-title">Profesor y Consultor</h3>
+        <p class="timeline-period">Universidad de Chile</p>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>✓ Profesor de Evaluacion de Proyectos y Gestion</li>
+          <li>✓ Coordinador de Consultoria Industrial</li>
+          <li>✓ Mentor de jovenes profesionales</li>
+          <li>✓ Investigador en Ingenieria Administrativa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Conversacion Tecnica y Directa</h2>
-            <p class="contact-intro">Hable con la Visi\u00f3n, no con la Burocracia. Cuénteme su desafío estratégico. Garantizo confidencialidad absoluta y respuesta técnica inmediata.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>Email</h4>
-                    <p><a href="mailto:carlosvergarachile@gmail.com">carlosvergarachile@gmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://linkedin.com/in/carlosvergarachile" target="_blank">linkedin.com/in/carlosvergarachile</a></p>
-                </div>
-                <div class="contact-item">
-                    <h4>Ubicacion</h4>
-                    <p>Gran Santiago, Region Metropolitana, Chile</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Servicios -->
+<section id="servicios" class="section-dark">
+  <div class="container">
+    <h2 class="section-title">Ecosistema de Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3 class="service-card-title">Diagnostico & Transformacion Anticipativa</h3>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>→ Analisis de escenarios futuros</li>
+          <li>→ Evaluacion de brechas estrategicas</li>
+          <li>→ Diseno de transformacion digital</li>
+          <li>→ Mapeo de vulnerabilidades</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-title">Planificacion Estrategica</h3>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>→ Definicion de vision y mision</li>
+          <li>→ Analisis competitivo</li>
+          <li>→ Roadmaps de implementacion</li>
+          <li>→ Gobernanza corporativa</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-title">Excelencia Operacional</h3>
+        <ul style="list-style: none; padding-left: 1.5rem;">
+          <li>→ Lean/Kaizen/OPEX</li>
+          <li>→ Rediseno de procesos</li>
+          <li>→ Supply chain optimization</li>
+          <li>→ Seguimiento de resultados</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Carlos Vergara. Todos los derechos reservados.</p>
-            <p>Estrategia | Gestion | Transformacion</p>
+<!-- Contacto -->
+<section id="contacto">
+  <div class="container contact-grid">
+    <div>
+      <h2 class="section-title" style="text-align: left;">Conversacion Tecnica y Directa</h2>
+      <p style="font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Hable con la Vision, no con la Burocracia.</p>
+      <p>Cuanteme su desafio estrategico. Garantizo confidencialidad absoluta y respuesta tecnica inmediata.</p>
+      <div style="margin-top: 2rem;">
+        <strong>Ubicacion:</strong>
+        <p>Gran Santiago, Region Metropolitana, Chile</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Nombre Completo</label>
+          <input type="text" id="name" name="name" required>
         </div>
-    </footer>
+        <div class="form-group">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electronico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Desafio Estrategico</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Solicitar Conversacion</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 Carlos Vergara. Todos los derechos reservados.</p>
+    <p>Consultoria Estrategica & Transformacion Organizacional</p>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+
+menuBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  menuBtn.textContent = navMenu.classList.contains('active') ? 'Cerrar' : 'Menu';
+});
+
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    menuBtn.textContent = 'Menu';
+  });
+});
+
+function handleSubmit(event) {
+  event.preventDefault();
+  alert('Gracias por su interes. Nos comunicaremos pronto.');
+  event.target.reset();
+}
+</script>
 </body>
 </html>
