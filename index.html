@@ -3,162 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Vergara del Rio - Consultor Estrategico</title>
+    <title>Carlos Vergara - Estrategia & Gestion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">CVR</div>
+            <div class="logo-group">
+                <div class="logo">CV</div>
+                <div class="logo-text">
+                    <div class="logo-main">Carlos Vergara</div>
+                    <div class="logo-sub">ESTRATEGIA & GESTION</div>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de Mi</a></li>
+                <li><a href="#acerca">Sobre Mi</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Carlos Vergara del Rio</h1>
-                <p class="subtitle">Ingeniero Industrial | MBA | Consultor de Gestion</p>
-                <p class="tagline">30+ anos de experiencia en transformacion organizacional y excelencia operacional</p>
-                <div class="cta-buttons">
-                    <a href="#contacto" class="btn btn-primary">Contactarme</a>
-                    <a href="#acerca" class="btn btn-secondary">Mas Informacion</a>
+    <!-- Hero Section con Imagen -->
+    <section id="inicio" class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) center/cover, url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a5f8f" width="1200" height="600"/></svg>")">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Su Socio Estrategico Integral</h1>
+                <p class="tagline">30+ anos de experiencia en transformacion organizacional, excelencia operacional y gestion del cambio en Chile y LATAM.</p>
+                <p class="description">Soluciones integrales desde el diagnostico preciso hasta la implementacion adaptativa, garantizando resultados que protegen y rentabilizan su patrimonio.</p>
+                <div class="hero-badges">
+                    <span class="badge">Liderazgo multidisciplinario</span>
+                    <span class="badge">Enfoque integral</span>
+                    <span class="badge">Ejecucion con ingeniera</span>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/300x400/2c3e50/ffffff?text=Carlos+Vergara" alt="Carlos Vergara" class="profile-img">
             </div>
         </div>
     </section>
 
+    <!-- About Section - Sobre Mi -->
     <section id="acerca" class="about">
         <div class="container">
-            <h2>Acerca de Mi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Director de Estrategia y Optimizacion con 30+ anos liderando programas de transformacion end-to-end, excelencia operacional y gestion del cambio en Chile y LATAM.</p>
-                    <p>Experto en diseno e implementacion estrategica, PMO/Value Realization, rediseno de procesos y gestion de stakeholders ejecutivos.</p>
+            <h2>Sobre Mi</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Autoridad Intelectual</h3>
+                    <p>Director de Estrategia y Optimizacion con 30+ anos liderando programas de transformacion end-to-end. Experto en anticipation estrategica y ejecucion disciplinada.</p>
                 </div>
-                <div class="about-highlights">
-                    <div class="highlight-box">
-                        <h3>30+</h3>
-                        <p>Anos de experiencia</p>
-                    </div>
-                    <div class="highlight-box">
-                        <h3>50+</h3>
-                        <p>Proyectos completados</p>
-                    </div>
-                    <div class="highlight-box">
-                        <h3>15+</h3>
-                        <p>Anos ensenando</p>
-                    </div>
+                <div class="about-item">
+                    <h3>Experiencia Profunda</h3>
+                    <p>Entiendo Chile profundo y los dinamicas del mercado LATAM. Metodologias propias que integran vision historica en cada decision estrategica.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Resultados Comprobados</h3>
+                    <p>Correos de Chile: reduccion lead time >10 a <3 dias, productividad 3x, capacidad +221%. Premio World Mail Award 2005.</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Anos Experiencia</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Proyectos Exitosos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anos Docente</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Compromiso</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experiencia" class="experience">
         <div class="container">
-            <h2>Experiencia Profesional</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Consultor Independiente</h3>
-                    <p class="company">Ingenieria de Gestion SpA</p>
-                    <p class="period">2006 - Presente</p>
-                    <ul>
-                        <li>Servicios de consultoria en diversos sectores</li>
-                        <li>Liderazgo de programas de transformacion</li>
-                        <li>Optimizacion de procesos</li>
-                    </ul>
+            <h2>Trayectoria Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Consultor Independiente</h3>
+                        <p class="company">Ingenieria de Gestion SpA</p>
+                        <p class="period">2006 - Presente | 19 anos</p>
+                        <ul>
+                            <li>Servicios de consultoria estrategica en diversos sectores</li>
+                            <li>Liderazgo de programas de transformacion integral</li>
+                            <li>Optimizacion de procesos y excelencia operacional</li>
+                            <li>Clients: Salud, Educacion, Manufactura, Gobierno</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="experience-card">
-                    <h3>Consultor Senior</h3>
-                    <p class="company">Soluziona - Correos de Chile</p>
-                    <p class="period">2000 - 2006</p>
-                    <ul>
-                        <li>Reduccion de lead time >10 a <3 dias</li>
-                        <li>Aumento de productividad 3x</li>
-                        <li>Premio World Mail Award 2005</li>
-                    </ul>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Consultor Senior de Gestion</h3>
+                        <p class="company">Soluziona - Correos de Chile</p>
+                        <p class="period">2000 - 2006 | 6 anos</p>
+                        <ul>
+                            <li>Reduccion de lead time: >10 a <3 dias</li>
+                            <li>Aumento de productividad: 3x</li>
+                            <li>Incremento de capacidad: +221% (14k → 45k envios/dia)</li>
+                            <li>Premio World Mail Award 2005</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="experience-card">
-                    <h3>Profesor</h3>
-                    <p class="company">Universidad de Chile</p>
-                    <p class="period">1990 - 2020</p>
-                    <ul>
-                        <li>Profesor de Gestion e Investigacion</li>
-                        <li>Coordinador de consultoria industrial</li>
-                        <li>Mentor de profesionales</li>
-                    </ul>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Profesor y Consultor</h3>
+                        <p class="company">Universidad de Chile</p>
+                        <p class="period">1990 - 2020 | 30 anos</p>
+                        <ul>
+                            <li>Profesor de Evaluacion de Proyectos y Gestion</li>
+                            <li>Coordinador de Consultoria Industrial</li>
+                            <li>Mentor de jovenes profesionales</li>
+                            <li>Investigador en Ingenieria Administrativa</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="habilidades" class="skills">
+    <!-- Services Section -->
+    <section id="servicios" class="services">
         <div class="container">
-            <h2>Competencias Clave</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Estrategia y Liderazgo</h3>
+            <h2>Ecosistema de Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Diagnostico & Transformacion Anticipativa</h3>
                     <ul>
-                        <li>Planificacion Estrategica</li>
-                        <li>Transformacion Organizacional</li>
-                        <li>Liderazgo Ejecutivo</li>
-                        <li>Coaching Gerencial</li>
+                        <li>Analisis de escenarios futuros</li>
+                        <li>Evaluacion de brechas estrategicas</li>
+                        <li>Diseno de transformacion digital</li>
+                        <li>Mapeo de vulnerabilidades</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Operaciones</h3>
+                <div class="service-card">
+                    <h3>Planificacion Estrategica</h3>
                     <ul>
-                        <li>Excelencia Operacional</li>
-                        <li>Lean/Kaizen</li>
-                        <li>Rediseno de Procesos</li>
-                        <li>Supply Chain</li>
+                        <li>Definicion de vision y mision</li>
+                        <li>Analisis competitivo</li>
+                        <li>Roadmaps de implementacion</li>
+                        <li>Gobernanza corporativa</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Gestion de Proyectos</h3>
+                <div class="service-card">
+                    <h3>Excelencia Operacional</h3>
                     <ul>
-                        <li>PMO/Value Realization</li>
-                        <li>Gobernanza de Portafolio</li>
-                        <li>Gestion del Cambio</li>
-                        <li>Stakeholders</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Otros</h3>
-                    <ul>
-                        <li>Analisis Empresarial</li>
-                        <li>Formacion de Directivos</li>
-                        <li>Ingles Avanzado</li>
-                        <li>Analisis de Datos</li>
+                        <li>Lean/Kaizen/OPEX</li>
+                        <li>Rediseno de procesos</li>
+                        <li>Supply chain optimization</li>
+                        <li>Seguimiento de resultados</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-content">
-                <p>Si desea discutir como puedo ayudar a su organizacion, contacteme.</p>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:carlosvergarachile@gmail.com">carlosvergarachile@gmail.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/carlosvergarachile" target="_blank">linkedin.com/in/carlosvergarachile</a></p>
-                    <p><strong>Ubicacion:</strong> Gran Santiago, Chile</p>
+            <h2>Conversacion Tecnica y Directa</h2>
+            <p class="contact-intro">Hable con la Visi\u00f3n, no con la Burocracia. Cuénteme su desafío estratégico. Garantizo confidencialidad absoluta y respuesta técnica inmediata.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:carlosvergarachile@gmail.com">carlosvergarachile@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>LinkedIn</h4>
+                    <p><a href="https://linkedin.com/in/carlosvergarachile" target="_blank">linkedin.com/in/carlosvergarachile</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Ubicacion</h4>
+                    <p>Gran Santiago, Region Metropolitana, Chile</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Carlos Vergara del Rio. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Carlos Vergara. Todos los derechos reservados.</p>
+            <p>Estrategia | Gestion | Transformacion</p>
         </div>
     </footer>
 </body>
